@@ -73,6 +73,8 @@
 }
 
 .menu{
+    text-transform: uppercase;
+    letter-spacing: -2px;
     font-size: 25px;
     color: #fff;
     border-radius: 10px;
