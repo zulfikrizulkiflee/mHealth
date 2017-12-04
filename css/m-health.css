@@ -1,0 +1,100 @@
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/**/
+/*   LANDING PAGE*/
+/**/
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+#landing{
+    background-color: aquamarine;
+}
+
+.flow-image-container{
+    height: 60vh;
+}
+
+.flow-image{
+    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    left: calc(50% - 15vh);
+    top: calc(50% - 25vh);
+}
+
+.flow-text-container{
+    height: 15vh;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.flow-dot-container{
+    color: #fff;
+    height: 5vh;
+    text-align: center;
+}
+
+.flow-dot-container i{
+    margin: 0 3vh;
+}
+
+.flow-btn-container{
+    color: #fff;
+    padding-right: 5vw;
+    height: 10vh;
+    text-align: right;
+}
+
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/**/
+/*   MAIN PAGE*/
+/**/
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+.health-chart {
+	height: 40vh;
+    width: 40vh;
+    margin: auto;
+}
+
+.menu-container{
+    height: 60vh;
+}
+
+.menu-bar{
+    height: 10vh;
+    padding: 3px;
+}
+
+.menu{
+    color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.my-profile {
+    background: linear-gradient(to right, #FF6377, #FF6377 93%, #FF8797 21.33%, #FF8797 97%, #FFA8B4 66.66%);
+}
+
+.medicine-note {
+    background: linear-gradient(to right, #00DBAA, #00DBAA 93%, #00EFB9 21.33%, #00EFB9 97%, #43FFD5 66.66%);
+}
+
+.sunnah-diet {
+    background: linear-gradient(to right, #0FCEDD, #0FCEDD 93%, #15E2F2 21.33%, #15E2F2 97%, #4EF2FF 66.66%);
+}
+
+.ruqyah {
+    background: linear-gradient(to right, #F7C72E, #F7C72E 93%, #FAD45D 21.33%, #FAD45D 97%, #FFE38B 66.66%);
+}
+
+.zikr-reminder {
+    background: linear-gradient(to right, #69A62A, #69A62A 93%, #7CB82F 21.33%, #7CB82F 97%, #CEE4A3 66.66%);
+}
+
+.diagnosis {
+    background: linear-gradient(to right, #DD5143, #DD5143 93%, #EF6C5A 21.33%, #EF6C5A 97%, #F38A78 66.66%);
+}
