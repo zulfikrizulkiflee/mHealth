@@ -51,22 +51,29 @@
 /**/
 /*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
 
+#main-menu {
+    background-color: #202020;
+}
+
+/*
 .health-chart {
 	height: 40vh;
     width: 40vh;
     margin: auto;
 }
+*/
 
 .menu-container{
-    height: 60vh;
+    height: 100vh;
 }
 
 .menu-bar{
-    height: 10vh;
+    height: 16.66vh;
     padding: 3px;
 }
 
 .menu{
+    font-size: 25px;
     color: #fff;
     border-radius: 10px;
     height: 100%;

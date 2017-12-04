@@ -6,6 +6,7 @@ $('#landing #next-flow').on('click', function () {
     switch (flowNum) {
     case "2":
         $('#landing').attr('data-flow', '3');
+        $('.flow-image').attr('src', 'img/logo.jpeg');
         $('.flow-text').html('Be healthy with m-health');
         $('.flow-dot-container').html('<i class="zmdi zmdi-circle-o"></i><i class="zmdi zmdi-circle-o"></i><i class="zmdi zmdi-circle"></i>');
         $('#next-flow').html('Start');
