@@ -1,3 +1,7 @@
+body{
+    height: 100vh;
+}
+
 /*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
 /**/
 /*   LANDING PAGE*/
@@ -14,10 +18,10 @@
 
 .flow-image {
     position: absolute;
-    width: 30vh;
-    height: 30vh;
-    left: calc(50% - 15vh);
-    top: calc(50% - 25vh);
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 100px);
+    top: calc(40% - 100px);
 }
 
 .flow-text-container {
@@ -64,12 +68,16 @@
 */
 
 .menu-container {
-    height: 80vh;
+    min-height: 100%;
 }
 
 .menu-bar {
     height: 13.33vh;
     padding: 3px;
+}
+
+.unset-display {
+	line-height: inherit !important;
 }
 
 .menu {
@@ -81,8 +89,8 @@
     border-radius: 10px;
     height: 100%;
     padding-left: 10px;
-    display: flex;
-    align-items: center;
+    line-height: 13.33vh;
+    display: block;
 }
 
 .my-profile-content {

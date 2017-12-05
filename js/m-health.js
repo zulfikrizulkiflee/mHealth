@@ -38,15 +38,16 @@ $('.my-profile').on('click',function(){
     }
     if($(this).parent('.menu-bar').hasClass('expanded')){
         $(this).parent('.menu-bar').stop(true, false).animate({
-            height: "33.33vh"
+            height: "33.33%"
         }).removeClass('expanded');
         $(this).parent('.menu-bar').siblings().show();
         $(this).find('.content-hide').fadeOut('medium');
         $('.edit-badge').fadeOut('medium');
         $('.user-name').attr('contenteditable',"false");
+        $('.user-name').removeAttr('contenteditable').removeAttr('onclick');
     }else{
         $(this).parent('.menu-bar').stop(true, false).animate({
-            height: "100vh"
+            height: $(window).height()
         }).addClass('expanded').siblings().fadeOut('slow');
         $(this).find('.content-hide').fadeIn('medium');
         $('.edit-badge').fadeIn('medium');
