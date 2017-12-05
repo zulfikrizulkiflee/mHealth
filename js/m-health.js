@@ -28,3 +28,15 @@ $('#landing #next-flow').on('click', function () {
         $('.flow-dot-container').html('<i class="zmdi zmdi-circle-o"></i><i class="zmdi zmdi-circle"></i><i class="zmdi zmdi-circle-o"></i>');
     }
 });
+
+$('.my-profile').on('click',function(){
+    if($(this).parent('.menu-bar').hasClass('expanded')){
+        $(this).parent('.menu-bar').stop(true, false).animate({
+            height: "33.33vh"
+        }).removeClass('expanded');
+    }else{
+        $(this).parent('.menu-bar').stop(true, false).animate({
+            height: "100vh"
+        }).addClass('expanded');
+    }
+});
