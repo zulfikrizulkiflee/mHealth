@@ -29,14 +29,39 @@ $('#landing #next-flow').on('click', function () {
     }
 });
 
+$('.content-hide').hide();
+$('.edit-badge').hide();
+
 $('.my-profile').on('click',function(){
+    if ($(':animated').length) {
+        return false;
+    }
     if($(this).parent('.menu-bar').hasClass('expanded')){
         $(this).parent('.menu-bar').stop(true, false).animate({
             height: "33.33vh"
         }).removeClass('expanded');
+        $(this).parent('.menu-bar').siblings().show();
+        $(this).find('.content-hide').fadeOut('medium');
+        $('.edit-badge').fadeOut('medium');
+        $('.user-name').attr('contenteditable',"false");
     }else{
         $(this).parent('.menu-bar').stop(true, false).animate({
             height: "100vh"
-        }).addClass('expanded');
+        }).addClass('expanded').siblings().fadeOut('slow');
+        $(this).find('.content-hide').fadeIn('medium');
+        $('.edit-badge').fadeIn('medium');
+        $('.user-name').attr('contenteditable',"true").attr('onclick',"document.execCommand('selectAll',false,null)");
     }
+}).on('click','.edit-badge',function(e){
+    alert("image");
+    e.stopPropagation();
+}).on('click','.user-name',function(e){
+    e.stopPropagation();
 });
+
+$('.user-name').on('blur', function(){
+   localStorage.setItem('m-health-username',$(this).html()); 
+});
+if(localStorage.getItem('m-health-username') != null){
+    $('.user-name').html(localStorage.getItem('m-health-username'));
+}

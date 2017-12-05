@@ -4,15 +4,15 @@
 /**/
 /*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
 
-#landing{
+#landing {
     background-color: aquamarine;
 }
 
-.flow-image-container{
+.flow-image-container {
     height: 60vh;
 }
 
-.flow-image{
+.flow-image {
     position: absolute;
     width: 30vh;
     height: 30vh;
@@ -20,30 +20,30 @@
     top: calc(50% - 25vh);
 }
 
-.flow-text-container{
+.flow-text-container {
     height: 15vh;
     text-align: center;
     color: #fff;
     font-weight: bold;
 }
 
-
-.flow-dot-container{
+.flow-dot-container {
     color: #fff;
     height: 5vh;
     text-align: center;
 }
 
-.flow-dot-container i{
+.flow-dot-container i {
     margin: 0 3vh;
 }
 
-.flow-btn-container{
+.flow-btn-container {
     color: #fff;
     padding-right: 5vw;
     height: 10vh;
     text-align: right;
 }
+
 
 /*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
 /**/
@@ -55,6 +55,7 @@
     background-color: #202020;
 }
 
+
 /*
 .health-chart {
 	height: 20vh;
@@ -62,19 +63,20 @@
 }
 */
 
-.menu-container{
+.menu-container {
     height: 80vh;
 }
 
-.menu-bar{
+.menu-bar {
     height: 13.33vh;
     padding: 3px;
 }
 
-.menu{
+.menu {
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     font-size: 25px;
+    font-weight: lighter;
     color: #fff;
     border-radius: 10px;
     height: 100%;
@@ -84,10 +86,48 @@
 }
 
 .my-profile-content {
-/*	text-align: center;*/
+    text-align: center;
+}
+
+.user-img {
+    background: url(../img/user.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+	width: 100px;
+    height: 100px;
+    -webkit-box-shadow: inset 42px -15px 42px -17px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 42px -15px 42px -17px rgba(0,0,0,0.3);
+    box-shadow: inset 42px -15px 42px -17px rgba(0,0,0,0.3);
+}
+
+.edit-badge{
+    position: absolute;
+    background: url(../img/edit.png) no-repeat center center;
+    -webkit-background-size: 20px 20px;
+    -moz-background-size: 20px 20px;
+    -o-background-size: 20px 20px;
+    background-size: 20px 20px;
+    right:36vw;
+    top:5vh;
+    background-color:#fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.user-name {
+	max-height: 32px;
+    overflow: hidden;
 }
 
 .my-profile {
+    padding-right: 25px;
     display: block !important;
     background: linear-gradient(to right, #FF6377, #FF6377 93%, #FF8797 21.33%, #FF8797 97%, #FFA8B4 66.66%);
 }
