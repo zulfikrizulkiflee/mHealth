@@ -57,18 +57,17 @@
 
 /*
 .health-chart {
-	height: 40vh;
-    width: 40vh;
+	height: 20vh;
     margin: auto;
 }
 */
 
 .menu-container{
-    height: 100vh;
+    height: 80vh;
 }
 
 .menu-bar{
-    height: 16.66vh;
+    height: 13.33vh;
     padding: 3px;
 }
 
@@ -84,7 +83,12 @@
     align-items: center;
 }
 
+.my-profile-content {
+/*	text-align: center;*/
+}
+
 .my-profile {
+    display: block !important;
     background: linear-gradient(to right, #FF6377, #FF6377 93%, #FF8797 21.33%, #FF8797 97%, #FFA8B4 66.66%);
 }
 
